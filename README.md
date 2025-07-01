@@ -29,9 +29,9 @@ The nine challenge problems have been carefully selected so that:
 
 All mesh files for the nine challenge problems are  available for download through this link:
 
-[**Download All Mesh Files**](https://app.box.com/s)
+[**Download All Mesh Files**](https://uofi.box.com/s/4xcgg0syhtniq7lexm21kpne7489gb9e)
 
-The code for generating these meshes is also available in the `/mesh_generation/` directory, allowing users to modify parameters or create variations as needed.
+The codes for generating these meshes are also available in the `/mesh_generation/` directory, allowing users to modify parameters or create variations as needed.
 
 ### Example Codes
 
