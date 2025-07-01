@@ -4,7 +4,7 @@ This repository include the mesh files and codes for nine benchmark fracture pro
 
 
 ## Overview
-In an attempt to address this predicament, this repository implements a vetting process in the form of nine challenge problems that any computational model of fracture must convincingly handle if it is to potentially describe fracture nucleation and propagation in general. The focus is on the most basic of settings, that of isotropic elastic brittle materials subjected to quasi-static mechanical loads.
+This repository implements a vetting process in the form of nine challenge problems that any computational model of fracture must convincingly handle if it is to potentially describe fracture nucleation and propagation in general. The focus is on the most basic of settings, that of isotropic elastic brittle materials subjected to quasi-static mechanical loads.
 
 ## Challenge Problems
 
