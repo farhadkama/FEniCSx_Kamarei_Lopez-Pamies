@@ -1,17 +1,18 @@
 # Nine circles of elastic brittle fracture: A series of challenge problems to assess fracture models
 
-This repository includes the mesh files and codes for nine benchmark fracture problems in FEniCSx to evaluate and validate phase-field models for elastic brittle fracture as described in [1].
-
+This repository includes the mesh files, the scripts to generate the meshes, and the FEniCSx FE code to solve the nine challenge fracture problems described in [1].
 
 ## Overview
-This repository implements a vetting process in the form of nine challenge problems that any computational model of fracture must convincingly handle if it is to potentially describe fracture nucleation and propagation in general. The focus is on the most basic of settings, that of isotropic elastic brittle materials subjected to quasi-static mechanical loads.
+The nine challenge problems introduced in [1] aim at establishing a minimum standard or vetting process — within the simplest setting of isotropic elastic brittle materials subjected to quasi-static mechanical loads — that any computational model of fracture ought to pass, if it is to potentially describe fracture nucleation and propagation in general.
 
 ## Challenge Problems
+The table below lists the nine challenge problems alongside the type of fracture nucleation and/or propagation that they characterize. If a model fails to deliver accurate predictions for one of these problems, then such a model is not a viable candidate to describe — and hence predict — fracture in general.   
 
-The nine challenge problems have been carefully selected so that:
+
+Critically, the problems are such that:
 - They can be carried out experimentally with standard testing equipment
 - They can be unambiguously analyzed with a sharp description of fracture
-- In aggregate they span the entire range of well settled experimental knowledge on fracture nucleation and propagation that has been amassed for over a century
+- In aggregate they span the entire range of well settled experimental knowledge on fracture nucleation and propagation that has been amassed for over a century.
 
 | Test | Strength Nucleation | Griffith Nucleation | Strength-Griffith Mediated Nucleation | Griffith Propagation Mode I | Griffith Propagation Mode III |
 |------|:------------------:|:------------------:|:-------------------------------------:|:---------------------------:|:-----------------------------:|
@@ -25,6 +26,7 @@ The nine challenge problems have been carefully selected so that:
 | **Double cantilever beam** | | ✓ | | ✓ | |
 | **Trousers** | | ✓ | | | ✓ |
 
+
 ## Mesh Files and Example Codes
 
 All mesh files for the nine challenge problems are  available for download through this link:
@@ -36,20 +38,26 @@ The codes for generating these meshes are also available in the `/mesh_generatio
 ### Example Codes
 
 The following example implementations are included:
-
-- **Torsion test** - Implementation for linear elasticity problems
-- **Trousers test** - Implementation for hyperelasticity problems
+- **Torsion test**
+- **Trousers test**
 
 
 
 ##  Usage
-This code takes the following **five material properties** as inputs:
+The code for the linear elastic brittle material (soda-lime glass) takes the following **five material constants** as inputs:
 
 1. `E` = Young's modulus  
 2. `ν` = Poisson's ratio  
 3. `Gc` = Critical energy release rate  
-4. `sts` = Tensile strength  
-5. `scs` = Compressive strength  
+4. `sts` = Uniaxial tensile strength 
+5. `shs` = Hydrostatic strength
+
+The code for the non-linear elastic (Neo-Hookean) brittle material (a PU elastomer) takes the following **five material constants** as inputs:
+1. `mu` = Shear modulus  
+2. `lambda` = Lame constant 
+3. `Gc` = Critical energy release rate  
+4. `sts` = Uniaxial tensile strength  
+5. `shs` = Hydrostatic strength
 
 Additionally, the user must specify the **regularization length** `eps` for the boundary value problems. Typically, this length should be chosen so that it is smaller than the smallest size of the structure, as well as the material characteristic length scale $$(3G_c)/(16 W_{ts})$$.
 
