@@ -1,6 +1,6 @@
 # Nine circles of elastic brittle fracture: A series of challenge problems to assess fracture models
 
-This repository include the mesh files and codes for nine benchmark fracture problems in FEniCSx to evaluate and validate phase-field models for elastic brittle fracture as described in [1].
+This repository includes the mesh files and codes for nine benchmark fracture problems in FEniCSx to evaluate and validate phase-field models for elastic brittle fracture as described in [1].
 
 
 ## Overview
