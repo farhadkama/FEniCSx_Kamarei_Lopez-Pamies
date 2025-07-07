@@ -16,7 +16,7 @@ rank = comm.Get_rank()
 size = comm.Get_size()
 
 
-# Parameters for the outer rectangle
+# Parameters for the geometry
 
 L = 15
 r_cyl = 2
