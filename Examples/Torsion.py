@@ -289,7 +289,7 @@ ce= alpha2*SQJ2 + alpha1*I1 - z*(1-ufl.sqrt(I1**2)/I1)*psi11
 #Balance of configurational forces PDE
 pen=1000*(3*Gc/8/eps)*ufl.conditional(ufl.lt(delta,1),1, delta)
 Wv=pen/2*((abs(z)-z)**2 + (abs(1-z) - (1-z))**2 )*dx
-Wv2=ufl.conditional(ufl.le(z, 0.95), 1, 0)*100*pen/2*((1/4)*(abs(zn-z)-(zn-z))**2)*dx
+Wv2=ufl.conditional(ufl.le(z, 0.05), 1, 0)*100*pen/2*((1/4)*(abs(zn-z)-(zn-z))**2)*dx
 
 R_z = y*2*z*(psi11)*dx + y*(ce)*dx + 3*delta*Gc/8*(-y/eps + 2*eps*ufl.inner(ufl.grad(z),ufl.grad(y)))*dx\
       + ufl.derivative(Wv,z,y)+ ufl.derivative(Wv2,z,y)

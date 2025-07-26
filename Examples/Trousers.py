@@ -460,7 +460,7 @@ Jac_imgrad = ufl.inner(ufl.grad(utrial),ufl.grad(delu))*dx
 #Balance of configurational forces PDE
 pen= 1000*(3*Gc/4/eps)*ufl.conditional(ufl.lt(delta,1),1, delta)
 Wv = pen/2*((abs(z)-z)**2 + (abs(1-z) - (1-z))**2 )*dx
-Wv2=ufl.conditional(ufl.le(z, 0.9), 1, 0)*100*pen/2*((1/4)*(abs(zn-z)-(zn-z))**2)*dx
+Wv2=ufl.conditional(ufl.le(z, 0.05), 1, 0)*100*pen/2*((1/4)*(abs(zn-z)-(zn-z))**2)*dx
 
 
 a_z = delz*2*z*(freeEnergy(u))*dx - delz*(ce(u, z))*dx \
