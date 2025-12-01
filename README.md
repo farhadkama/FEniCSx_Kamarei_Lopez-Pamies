@@ -70,4 +70,4 @@ Alternatively, you may also reach out to my Ph.D. advisor at [pamies@illinois.ed
 
 ##  References
 
-[1] Kamarei, F., Zeng, B., Dolbow, J.E., Lopez-Pamies, O. (2026). *Nine circles of elastic brittle fracture: A series of challenge problems to assess fracture models*.  Computer Methods in Applied Mechanics and Engineering, 448, 118449. [PDF](http://pamies.cee.illinois.edu/Publications_files/CMAME2026.pdf)
+[1] Kamarei, F., Zeng, B., Dolbow, J.E., Lopez-Pamies, O. (2026). *Nine circles of elastic brittle fracture: A series of challenge problems to assess fracture models*.  Computer Methods in Applied Mechanics and Engineering, 448, 118449. [PDF](https://pamies.cee.illinois.edu/assets/pdf/CMAME2026.pdf)
